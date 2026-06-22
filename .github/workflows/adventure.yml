@@ -28,7 +28,8 @@ jobs:
           PLAYER_NAME: ${{ github.event.issue.user.login }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-        run: python play_adventure.py
+        run: python .github/workflows/play_adventure.py
+
 
       - name: Commit and Push Changes
         run: |
