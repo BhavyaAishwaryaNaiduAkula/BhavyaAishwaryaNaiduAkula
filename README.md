@@ -218,43 +218,14 @@ Personal portfolio website showcasing my skills, projects, and learning journey 
 > "Small progress each day adds up to big results."
 
 ---
+
 ## 👾 Contribution Adventure
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/BhavyaAishwaryaNaiduAkula/BhavyaAishwaryaNaiduAkula/output/pacman-contribution-graph.svg" alt="Pacman contribution graph" />
 </p>
-name: Generate Pacman
 
-on:
-schedule:
-- cron: "0 */12 * * *"
-workflow_dispatch:
-
-jobs:
-generate:
-runs-on: ubuntu-latest
-
-```
-permissions:
-  contents: write
-
-steps:
-  - name: Generate Pacman Contribution Graph
-    uses: Platane/snk@v3
-    with:
-      github_user_name: BhavyaAishwaryaNaiduAkula
-      outputs: |
-        dist/pacman-contribution-graph.svg
-
-  - name: Push to Output Branch
-    uses: crazy-max/ghaction-github-pages@v4
-    with:
-      target_branch: output
-      build_dir: dist
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
+---
 
 ⭐ Thanks for visiting my profile!
 
